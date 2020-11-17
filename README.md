@@ -4,3 +4,4 @@ An application utilizing Express to allow the user to take notes. Deployed via H
 
 Initial Commit ---------------------
 Started skeleton of server and linking html and api js files
+API Get/Post functions added
