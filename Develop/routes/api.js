@@ -38,8 +38,8 @@ module.exports = function(app) {
         response.send("New note has been entered.");
       });
 
-      app.delete('/api/notes/:id', function(req, res) {
-        const deleteNote = req.params.id;
+      app.delete('/api/notes/:id', function(request, response) {
+        const deleteNote = request.params.id;
         console.log(deleteNote);
     
         fs.readFile('./db/db.json', (err, data) => {
@@ -58,7 +58,8 @@ module.exports = function(app) {
             if (err) throw err;
           });
         });
-        res.status(204).send();
+        response.send("Note deleted.");
+        response.status(204).send();
         console.log("status test:", status)
       });
     };
