@@ -1,5 +1,10 @@
 # NoteTaker
 
+![](public/assets/notetakerheroku.gif)
+
+
+
+
 ## To Use: https://notetaker11uncral.herokuapp.com/public/index.html for web link, or download github repo and install express, then "node server.js"
 
 ### An application utilizing Express to allow the user to take notes. Deployed via Heroku.
